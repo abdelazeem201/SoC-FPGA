@@ -5,7 +5,7 @@
 //*  Author: Abdelazeem                                                   *
 //*  Revision 0.1                                                         *
 //*  Date     2024/01/26                                                  *   
-//*  Email : ja.abdelazeem201@gmail.com                                   *
+//*  Email : a.abdelazeem201@gmail.com                                   *
 //***********************************************************************
 `timescale 1ns/1ns
 
