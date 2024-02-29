@@ -2,7 +2,7 @@
 //*   ASIC Fresh Board                                                *
 //*   digital clock testbench                                         *
 //*  Top File : testbench.v                                           *
-//*  Author: Jude                                                     *
+//*  Author: abdelazeem                                                *
 //*  Revision 0.1                                                     *
 //*  Date     2023/12/11                                              *
 //*  Email : a.abdelazeem201@gmail.com                                *
