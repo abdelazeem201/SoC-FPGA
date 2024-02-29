@@ -1,3 +1,12 @@
+//*************************************************************************
+//*   ASIC Fresh Board
+//*   UART2I2C                                                      
+//*  File : uart_byte_tx.v                                                 
+//*  Author: Abdelazeem                                                   *
+//*  Revision 0.1                                                         *
+//*  Date     2024/01/26                                                  *   
+//*  Email : a.abdelazeem201@gmail.com                                   *
+//***********************************************************************
 `timescale 1ns/1ns
 
 module uart_byte_tx(
