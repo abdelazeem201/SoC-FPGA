@@ -1,15 +1,13 @@
 `timescale  1ns/1ns
+
 //*********************************************************************
-//*  Malogic ASIC Fresh Board 上海零义科技有限公司                    *
+//* ASIC Fresh Board                                                   *
 //*  Malogic uart                                                     *
 //*  Top File : uart.v                                                *
-//*  Author: Jude                                                     *
+//*  Author: abdelazeem                                               *
 //*  Revision 0.1                                                     *
 //*  Date     2023/12/12                                              *
-//*  Email : jude126m@126.com                                         * 
-//*  购买链接 https://item.taobao.com/item.htm?ft=t&id=717924064672   *
-//*  此代码版权归上海零义科技有限公司及作者所有，可用于个人学习、研究,*
-//*  以及其他非商业性或非盈利性用途，转载请保证其完整性。             *  
+//*  Email : a.abdelazeem201@gmail.com                                * 
 //*********************************************************************
 
 module  uart_top
