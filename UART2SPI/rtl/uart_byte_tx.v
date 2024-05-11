@@ -1,15 +1,12 @@
 //*************************************************************************
-//*  Malogic ASIC Fresh Board 上海零义科技有限公司                        *
-//*  Malogic UART2SPI                                              
+//*                                                                       *
+//*  UART2SPI                                              
 //*  File : uart_byte_tx                                              
-//*  Author: Jude                                                         *
+//*  Author: abdelazeem                                                   *
 //*  Revision 0.1                                                         *
 //*  Date     2024/01/26                                                  *
-//*  Email : jude126m@126.com                                             *
-//*  淘宝店铺：https://item.taobao.com/item.htm?ft=t&id=717924064672      *
-//*  此代码版权归上海零义科技有限公司及作者所有，可用于个人学习、研究,    *
-//*  以及其他非商业性或非盈利性用途，转载请保证其完整性。                 *
-//*  源代码来源于internet,经修改成为此代码。                              *
+//*  Email : a.abdelazeem201.com                                          *
+//                                                                        *
 //*************************************************************************
 
 module uart_byte_tx(
