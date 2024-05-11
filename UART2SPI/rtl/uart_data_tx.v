@@ -1,49 +1,14 @@
 //*************************************************************************
-//*  Malogic ASIC Fresh Board 上海零义科技有限公司                        *
-//*  Malogic UART2SPI                                              
-//*  File : uart_data_tx                                              
-//*  Author: Jude                                                         *
+//*                                                                       *
+//*  UART2SPI                                              
+//*  File : uart_byte_tx                                              
+//*  Author: abdelazeem                                                   *
 //*  Revision 0.1                                                         *
 //*  Date     2024/01/26                                                  *
-//*  Email : jude126m@126.com                                             *
-//*  淘宝店铺：https://item.taobao.com/item.htm?ft=t&id=717924064672      *
-//*  此代码版权归上海零义科技有限公司及作者所有，可用于个人学习、研究,    *
-//*  以及其他非商业性或非盈利性用途，转载请保证其完整性。                 *
-//*  源代码来源于internet,经修改成为此代码。                              *
+//*  Email : a.abdelazeem201.com                                          *
+//                                                                        *
 //*************************************************************************
-// 
-//本模块实现1~16字节（8~256）位数据的发送。需要发送的数据位宽，可以在例化模块时使用DATA_WIDTH来修改
 
-//要求DATA_WIDTH的值为8的整数倍，且最大不超过256。对于实际数据位宽达不到8的整数倍的情况，需要将数据
-//高位补0，以得到8整数倍位宽的数据之后再发送 
-//可以用如下写法
-//assign data = {4'd0,data1},
-//其中data位宽为16，连接到uart_data_tx的data端口上作为待发送数据
-
-//例化模板
-// 
-//uart_data_tx
-//#(
-//	.DATA_WIDTH(DATA_WIDTH),
-//	.MSB_FIRST(MSB_FIRST)
-//)
-//uart_data_tx(
-//	.Clk(Clk),
-//	.Rst_n(Rst_n),
-//	.data(data),
-//	.send_en(send_en),   
-//	.Baud_Set(3'd4),  
-//	.uart_tx(uart_tx),  
-//	.Tx_Done(Tx_Done),   
-//	.uart_state(uart_state)
-//);
-//---------------------------------------
-//例化时
-//1、通过修改DATA_WIDTH的值来指定每次发送的数据位宽
-//2、通过修改MSB_FIRST的值来确定先发高字节还是先发低字节。为1则先发高字节，为0则先发低字节
-//3、send_en为脉冲触发信号，发送时提供一个时钟周期的高脉冲即可触发一次传输
-//4、Baud_Set 0（9600）、1（19200）、2（38400）、3（57600）、4（115200）
-//5、每次传输完成（指定位宽的数据传输完成），TX-Done产生一个时钟周期的高脉冲
  
 
 
